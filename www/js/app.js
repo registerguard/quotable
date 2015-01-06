@@ -106,6 +106,7 @@ $(function() {
     $source = $('.source');
     $showCredit = $('.show-credit');
     $quote = $('#quote');
+    $sourceline = $('#sourceline');
     $logoWrapper = $('.logo-wrapper');
 
     var quote = quotes[Math.floor(Math.random()*quotes.length)];
@@ -121,7 +122,7 @@ $(function() {
     $themeButtons.on('click', function() {
         $themeButtons.removeClass().addClass('btn btn-default');
         $(this).addClass('btn-primary');
-        $poster.removeClass('poster-news poster-music poster-fresh-air poster-snap-judgement')
+        $poster.removeClass('poster-news poster-dark poster-music poster-fresh-air poster-snap-judgement')
                     .addClass('poster-' + $(this).attr('id'));
     });
 
@@ -142,6 +143,11 @@ $(function() {
     $quote.on('click', function() {
         $(this).find('button').toggleClass('btn-primary btn-default');
         $poster.toggleClass('quote');
+    });
+    
+    $sourceline.on('click', function() {
+        $(this).find('button').toggleClass('btn-primary btn-default');
+        $('.source').toggle(  );
     });
 
     $fontSize.on('change', function() {

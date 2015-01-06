@@ -236,6 +236,26 @@ header {
 			}
 		}
 	}
+	
+	&.poster-dark {
+		background: @gray-darker;
+		color: @gray-lighter;
+		
+		.logo-wrapper {
+			background: @gray-darker;
+
+			.logo.logo-dark {
+				display: inline-block !important;
+				border: none;
+
+				.sixteen-by-nine& {
+					height: 40px;
+					width: auto;
+				}
+			}
+		}
+		
+	}
 
 	&.poster-music {
 		background: @musicDark;
