@@ -143,7 +143,7 @@ def assets_down(path='www/assets'):
     """
     Download assets folder from s3 to www/assets
     """
-    local('aws s3 sync s3://%s/%s/ %s/ --acl "public-read" --cache-control "max-age=5" --region "us-east-1"' % (app_config.ASSETS_S3_BUCKET, app_config.PROJECT_SLUG, path))
+    local('aws s3 sync s3://%s/%s/ %s/ --acl "public-read" --cache-control "max-age=5" --region "us-west-2"' % (app_config.ASSETS_S3_BUCKET, app_config.PROJECT_SLUG, path))
 
 def assets_up(path='www/assets'):
     """
@@ -151,11 +151,25 @@ def assets_up(path='www/assets'):
     """
     _confirm("You are about to replace the copy of the folder on the server with your own copy. Are you sure?")
 
-    local('aws s3 sync %s/ s3://%s/%s/ --acl "public-read" --cache-control "max-age=5" --region "us-east-1" --delete' % (
+    local('aws s3 sync %s/ s3://%s/%s/ --acl "public-read" --cache-control "max-age=5" --region "us-west-2" --delete' % (
             path,
             app_config.ASSETS_S3_BUCKET,
             app_config.PROJECT_SLUG
         ))
+
+def all_up(path='www'):
+    """
+    Upload static folder to s3
+    """
+    _confirm("You are about to replace the copy of the folder on the server with your own copy. Are you sure?")
+
+    local('aws s3 sync %s/ s3://%s/%s/ --acl "public-read" --cache-control "max-age=5" --region "us-west-2" --delete' % (
+            path,
+            app_config.ASSETS_S3_BUCKET,
+            app_config.PROJECT_SLUG
+        ))
+
+
 
 def assets_rm(path):
     """
@@ -171,7 +185,7 @@ def assets_rm(path):
 
             for file_path in file_list:
 
-                local('aws s3 rm s3://%s/%s/%s --region "us-east-1"' % (
+                local('aws s3 rm s3://%s/%s/%s --region "us-west-2"' % (
                     app_config.ASSETS_S3_BUCKET,
                     app_config.PROJECT_SLUG,
                     file_path.replace('www/assets/', '')

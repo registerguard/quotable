@@ -18,7 +18,7 @@ PROJECT_NAME = 'quotable'
 
 # Project name in urls
 # Use dashes, not underscores!
-PROJECT_SLUG = 'quotable'
+PROJECT_SLUG = 'quote'
 
 # The name of the repository containing the source
 REPOSITORY_NAME = 'quotable'
@@ -72,14 +72,14 @@ GOOGLE = {
 }
 
 NPR_DFP = {
-    'STORY_ID': '203618536',
-    'TARGET': 'News_NPR_News_Investigations',
-    'ENVIRONMENT': 'NPRTEST',
+    'STORY_ID': 'XXXXXX',
+    'TARGET': 'XXXXXX',
+    'ENVIRONMENT': 'XXXXXX',
     'TESTSERVER': 'true'
 }
 
 """
 SERVICES
 """
-GOOGLE_ANALYTICS_ID = ''
+GOOGLE_ANALYTICS_ID = 'asdfasdf'
 

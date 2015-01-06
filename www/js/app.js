@@ -12,7 +12,7 @@ var $logoWrapper = null;
 
 var quotes = [
     {
-        "quote": "This is an important quote about important things.",
+        "quote": "This is an important quote.",
         "source": "Some Person"
     }
 ];
