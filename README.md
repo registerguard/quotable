@@ -32,9 +32,9 @@ Quotable is an app that lets you make sharable images out of quotations.
 TLDR
 ------
 
-Clone, set up virtualenv as described above, install requirements, set up aws-cli if needed, do a `fab render` and the `fab up_all` to push it.
+Clone, set up virtualenv as described above, [install requirements](#install-requirements), set up [aws-cli credentials](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) if needed, do a `python app.py` for local dev at [0.0.0.0:8000](0.0.0.0:8000/).
 
-For dev do a `python app.py` for local at 0.0.0.0:8000
+To push to live do a `fab render` and the `fab up_all`.
 
 Assumptions
 -----------
