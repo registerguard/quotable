@@ -222,15 +222,21 @@ header {
 	font-size: 90px;
 	line-height: 1 !important;
 	overflow: hidden;
+	
+	.logo{
+		font-size: 35px;
+		float: right;
+		bottom: 0;
+		font-family: @font-family-flag;
+	}
 
 	&.poster-news {
 		.logo-wrapper {
 			.logo.logo-news {
 				display: inline-block !important;
-				border: none;
+				color: @gray-darker;
 
 				.sixteen-by-nine& {
-					height: 40px;
 					width: auto;
 				}
 			}
@@ -242,14 +248,11 @@ header {
 		color: @gray-lighter;
 		
 		.logo-wrapper {
-			background: @gray-darker;
-
 			.logo.logo-dark {
 				display: inline-block !important;
-				border: none;
+				color: @gray-lighter;
 
 				.sixteen-by-nine& {
-					height: 40px;
 					width: auto;
 				}
 			}
@@ -332,7 +335,7 @@ header {
 		}
 
 		.logo-wrapper {
-			padding: @grid-gutter-width;
+			padding: 15px;
 
 			img {
 				width: 150px;
@@ -341,6 +344,11 @@ header {
 			.poster-music& {
 				padding-bottom: @grid-gutter-width - 10;
 			}
+			
+			.logo{
+				font-size: 25px;
+			}
+			
 		}
 
 		p.source {
@@ -443,10 +451,9 @@ header {
 		bottom: 0;
 		right: 0;
 		text-align: right;
-		padding:  @grid-gutter-width @grid-gutter-width * 2 @grid-gutter-width * 2;
+		padding:  10px;
 		margin: 0;
 		font-size: 46px;
-		background: #fff;
 
 		.logo {
 			.hide;

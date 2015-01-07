@@ -56,10 +56,21 @@
 // Typography
 // -------------------------
 
+@font-family-flag:		  "RGWeb",Cambria,Georgia,serif;
 @font-family-sans-serif:  Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
+
+@font-face {
+	font-family:"RGWeb";
+	src:url("http://fonts.registerguard.com/rg/rgweb.eot");
+	src:url("http://fonts.registerguard.com/rg/rgweb.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/rg/rgweb.woff") format("woff"),
+		url("http://fonts.registerguard.com/rg/rgweb.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/rg/rgweb.svg#RGWeb") format("svg");
+	font-weight:normal;font-style:normal;
+}
 
 @font-size-base:          14px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
