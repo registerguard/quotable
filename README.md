@@ -1,7 +1,11 @@
-quotable
-========================
+#RG Quotes
+
+###Shamelessly taken in full and modified from [NPRapps quotable](https://github.com/nprapps/quotable).
+
+This code is open source under the MIT license. See `LICENSE` for complete details.
 
 * [What is this?](#what-is-this)
+* [TLDR](#tldr)
 * [Assumptions](#assumptions)
 * [What's in here?](#whats-in-here)
 * [Install requirements](#install-requirements)
@@ -21,11 +25,16 @@ What is this?
 
 Quotable is an app that lets you make sharable images out of quotations.
 
+![RG](examples/quote-this-is-a-super-important.png)
+
 !["I've made a huge mistake"](examples/quote-ive-made-a-huge-mistake.png)
 
-!["Annyong!"](examples/quote-annyong.png)
+TLDR
+------
 
-This code is open source under the MIT license. See `LICENSE` for complete details.
+Clone, set up virtualenv as described above, install requirements, set up aws-cli if needed, do a `fab render` and the `fab up_all` to push it.
+
+For dev do a `python app.py` for local at 0.0.0.0:8000
 
 Assumptions
 -----------
@@ -117,7 +126,9 @@ For example, if you are starting from scratch, you would copy assets into the `w
 Editing workflow
 -------------------
 
-The app is rigged up to Google Docs for a simple key/value store that provides an editing workflow.
+Don't think this touches our's
+
+~The app is rigged up to Google Docs for a simple key/value store that provides an editing workflow.~
 
 View the sample copy spreadsheet [here](https://docs.google.com/spreadsheet/pub?key=0AlXMOHKxzQVRdHZuX1UycXplRlBfLVB0UVNldHJYZmc#gid=0). A few things to note:
 
@@ -197,4 +208,3 @@ Deploy
 ```
 fab deploy
 ```
-
