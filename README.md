@@ -29,6 +29,8 @@ Quotable is an app that lets you make sharable images out of quotations.
 
 !["I've made a huge mistake"](examples/quote-ive-made-a-huge-mistake.png)
 
+!["In-feed example"](examples/in-tweet.jpg)
+
 TLDR
 ------
 
