@@ -38,6 +38,15 @@ Clone, set up virtualenv as described above, [install requirements](#install-req
 
 To push to live do a `fab render` and the `fab up_all`.
 
+Touch points:
+
+* `index` has page
+* `app.js` does in-page magic
+* `variables.less` and `app.less` are CSS bits
+* `fabfile.py` has deployment methods
+* `requirements.txt` important for first time around
+* `www` is where stuff gets rendered
+
 Assumptions
 -----------
 
