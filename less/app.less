@@ -1,6 +1,6 @@
 @import "less/lib/bootstrap/bootstrap";
-@import "less/lib/font-awesome/font-awesome";
-@import "less/medium";
+// @import "less/lib/font-awesome/font-awesome";
+// @import "less/medium";
 
 // Global variables
 @img-root: "../assets";
@@ -219,7 +219,7 @@ header {
 	margin: @line-height-computed;
 	position: relative;
 	padding: @grid-gutter-width * 2;
-	font-size: 90px;
+	font-size: 50px;
 	line-height: 1 !important;
 	overflow: hidden;
 	
@@ -346,7 +346,7 @@ header {
 			}
 			
 			.logo{
-				font-size: 90px;
+				font-size: 30px;
 			}
 			
 		}
@@ -362,6 +362,7 @@ header {
 
 	.quote& {
 		.left-quote {
+			font-family: @font-family-flag;
 			content:"\201C";
 			display: block;
 			position: absolute;
@@ -392,6 +393,7 @@ header {
 		}
 
 		p {
+			font-family: @font-family-serif;
 			font-size: inherit;
 			font-weight: inherit;
 			margin: 0;

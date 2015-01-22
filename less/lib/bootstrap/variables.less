@@ -57,8 +57,8 @@
 // -------------------------
 
 @font-family-flag:		  "RGWeb",Cambria,Georgia,serif;
-@font-family-sans-serif:  Helvetica, Arial, sans-serif;
-@font-family-serif:       Cambria, Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  "BentonSansCond Regular", Arial, sans-serif;
+@font-family-serif:       "MillerHeadline Light", Cambria, Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
@@ -70,6 +70,39 @@
 		url("http://fonts.registerguard.com/rg/rgweb.ttf") format("truetype"),
 		url("http://fonts.registerguard.com/rg/rgweb.svg#RGWeb") format("svg");
 	font-weight:normal;font-style:normal;
+}
+
+@font-face {
+	font-family: "BentonSansCond Regular";
+	src: url("http://fonts.registerguard.com/benton/sanscondbold.eot");
+	src: url("http://fonts.registerguard.com/benton/sanscondbold.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.woff") format("woff"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.svg#web") format("svg");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "MillerHeadline Bold";
+	src: url("http://fonts.registerguard.com/miller/headlinebold.eot");
+	src: url("http://fonts.registerguard.com/miller/headlinebold.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/miller/headlinebold.woff") format("woff"),
+		url("http://fonts.registerguard.com/miller/headlinebold.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/miller/headlinebold.svg#web") format("svg");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "MillerHeadline Light";
+	src: url("http://fonts.registerguard.com/miller/headlinelight.eot");
+	src: url("http://fonts.registerguard.com/miller/headlinelight.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/miller/headlinelight.woff") format("woff"),
+		url("http://fonts.registerguard.com/miller/headlinelight.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/miller/headlinelight.svg#web") format("svg");
+	font-style: normal;
+	font-weight: normal;
 }
 
 @font-size-base:          14px;
@@ -255,7 +288,7 @@
 // Number of columns in the grid system
 @grid-columns:              12;
 // Padding, to be divided by two and applied to the left and right of all columns
-@grid-gutter-width:         30px;
+@grid-gutter-width:         50px;
 // Point at which the navbar stops collapsing
 @grid-float-breakpoint:     @screen-tablet;
 
