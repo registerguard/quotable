@@ -31,6 +31,8 @@ Quotable is an app that lets you make sharable images out of quotations.
 
 !["In-feed example"](examples/in-tweet.jpg)
 
+Good use: https://twitter.com/LATdatadesk/status/558687417519988736
+
 TLDR
 ------
 
